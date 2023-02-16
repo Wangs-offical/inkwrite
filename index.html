@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+    <!--import mdui css-->
+    <script type="text/javascript" src="js/main.js"></script><!--import main js-->
+    <script type="text/javascript" src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script><!--import mdui js-->
+    <title>InkWriteStudio(BetaVersion)</title>
+</head>
+<body class="mdui-theme-layout-dark">
+<div class="mdui-container">
+    <!--main page-->
+    <br><br>
+    <h1>欢迎</h1>
+    <h3>一年之计在于春，一日之计在于晨</h3>
+    <!--添加-->
+    <button class="mdui-fab mdui-fab-fixed mdui-ripple">
+        <i class="mdui-icon material-icons">add</i>
+    </button>
+    <!--关于dialog-->
+    <button class="mdui-btn mdui-btn-raised" mdui-dialog="{target: '#about'}">关于InkWriteStudio</button>
+    <div class="mdui-dialog" id="about">
+        <div class="mdui-dialog-title">关于InkWriteStudio</div>
+        <div class="mdui-dialog-content">InkWriteStudio Beta 0.0.1<br>基于以下开源项目：<ul><li>Electron</li><li>MdUI</li><li>JsMind</li></ul>Github仓库：https://github.com/Wangs-offical/inkwrite<br>点击空白区域退出
+        </div>
+    </div>
+    <!--end-->
+    <!--card-->
+    <br><br>
+    <div class="mdui-row">
+        <div class="mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-card">
+                <div class="mdui-card-media">
+                    <img src="https://cdn.w3cbus.com/mdui/docs~1/static/1ca4b7b2b4b2f2352aeb.jpg"/>
+                    <div class="mdui-card-media-covered">
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">文章</div>
+                            <div class="mdui-card-primary-subtitle">上次编辑:1919.8.10 11:45</div>
+                        </div>
+                        <div class="mdui-card-actions">
+                            <a href="edit.html"><button class="mdui-btn mdui-ripple mdui-ripple-white">打开</button></a>
+                            <button class="mdui-btn mdui-ripple mdui-ripple-white">打开工程文件夹</button>
+                            <button class="mdui-btn mdui-ripple mdui-ripple-white">删除项目</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+</div>
+</body>
+</html>
