@@ -2,7 +2,7 @@
 const { app, BrowserWindow, ipcMain} = require('electron')
 const path = require('path')
 
-function handleSetTitle (eveKnt, title) {
+function handleSetTitle (event) {
     const webContents = event.sender
     if (event.sender){
         const editPage = new BrowserWindow({
