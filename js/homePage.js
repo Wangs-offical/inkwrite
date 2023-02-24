@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
     for (let i = 0;i<openFile.length;i++){
         openFile[i].onclick = function () {
             diaLogMessage("123",'按钮已点击',"12333")
-            window.electronAPI.setTitle("123")
+            window.electronAPI.newWindow(200)
             // 创建编辑器页面
             // const editPage = new BrowserWindow({
             //     width: 1000,

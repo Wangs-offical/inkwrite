@@ -2,7 +2,7 @@
 const { app, BrowserWindow, ipcMain} = require('electron')
 const path = require('path')
 
-function handleSetTitle (event) {
+function newWindow (event) {
     const webContents = event.sender
     if (event.sender){
         const editPage = new BrowserWindow({
@@ -30,7 +30,7 @@ const index = () => {
 
 // 设置初始页面为主页
 app.whenReady().then(() => {
-    ipcMain.on('set-title', handleSetTitle)
+    ipcMain.on('newWindow', newWindow)
     index()
 })
 
