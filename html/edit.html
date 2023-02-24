@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" rel="stylesheet" type="text/css">
+    <!--import mdui css-->
+    <script src="../js/main.js" type="text/javascript"></script><!--import main js-->
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js" type="text/javascript"></script><!--import mdui js-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsmind@0.5.2/style/jsmind.min.css"><!--jsmind css-->
+    <script src="https://cdn.jsdelivr.net/npm/jsmind@0.5.2/js/jsmind.min.js"></script><!--jsmind js-->
+    <title>InkWriteStudio编辑器</title>
+</head>
+<body class="mdui-theme-layout-dark">
+    <div class="mdui-container">
+        <!--bar-->
+        <div class="mdui-appbar mdui-appbar-fixed">
+            <div class="mdui-toolbar mdui-color-theme mdui-shadow-0">
+                <i class="mdui-icon material-icons">book</i>
+                <a class="mdui-typo-title" href="javascript:">文章</a>
+                <div class="mdui-toolbar-spacer"></div>
+                <a class="mdui-btn mdui-btn-icon" href="javascript:">
+                    <i class="mdui-icon material-icons">refresh</i>
+                </a>
+                <a class="mdui-btn mdui-btn-icon" href="javascript:">
+                    <i class="mdui-icon material-icons">more_vert</i>
+                </a>
+            </div>
+            <div class="mdui-tab mdui-color-theme" mdui-tab>
+                <a class="mdui-ripple mdui-ripple-white" href="#write">
+                    <i class="mdui-icon material-icons">border_color</i>
+                    <label>书写</label>
+                </a>
+                <a class="mdui-ripple mdui-ripple-white" href="#nt">
+                    <i class="mdui-icon material-icons">dvr</i>
+                    <label>脑图</label>
+                </a>
+                <a class="mdui-ripple mdui-ripple-white" href="#rs">
+                    <i class="mdui-icon material-icons">perm_contact_calendar</i>
+                    <label>人设</label>
+                </a>
+                <a class="mdui-ripple mdui-ripple-white" href="#view">
+                    <i class="mdui-icon material-icons">featured_play_list</i>
+                    <label>总览</label>
+                </a>
+            </div>
+            <!--end-->
+            <!--书写-->
+            <div id="write">
+                <!--章节选择器-->
+                <div class="mdui-appbar">
+                    <div class="mdui-tab mdui-color-theme mdui-shadow-0 mdui-tab">
+                        <a class="mdui-ripple mdui-ripple-white" href="#write/#write-1">第一章</a>
+                        <a class="mdui-ripple mdui-ripple-white" href="#write/#write-2">第二章</a>
+                        <a class="mdui-ripple mdui-ripple-white" href="#write/#write-3">第三章</a>
+                    </div>
+                </div>
+                <!--end-->
+                <!--标题输入-->
+                <div class="mdui-p-l-2 mdui-shadow-0">
+                    <div class="mdui-textfield mdui-shadow-0">
+                        <i class="mdui-icon material-icons">book</i>
+                        <input class="mdui-textfield-input mdui-shadow-0" placeholder="标题"/>
+                    </div>
+                    <div class="mdui-chip">
+                        <span class="mdui-chip-title">当前字数:10</span>
+                    </div>
+                    <div class="mdui-textfield">
+                        <textarea class="mdui-textfield-input" rows="28" placeholder="在这里写文章"></textarea>
+                    </div>
+                </div>
+                <!--end-->
+            </div>
+            <!--end-->
+            <div id="nt">
+                <!--脑图-->
+                <iframe src="https://jsmind.online/" style="height:100vh; width: 100vw; "></iframe>
+                <!--end-->
+            </div>
+            <div id="rs">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+
+</html>

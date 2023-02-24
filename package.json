@@ -1,0 +1,19 @@
+{
+  "name": "inkwrite",
+  "version": "0.0.1",
+  "description": "A Write APP",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Starbit-Wangs",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "^23.1.0"
+  },
+  "dependencies": {
+    "gg-editor": "^3.1.3",
+    "jsdom": "^21.1.0",
+    "mdui": "^1.0.2"
+  }
+}
