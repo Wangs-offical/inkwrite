@@ -1,6 +1,8 @@
 const { app, BrowserWindow } = require('electron');
-const { contextBridge, ipcRenderer } = require('electron')
+const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('electronAPI', {
-    newWindow: (code) => ipcRenderer.send('newWindow', code)
+    openEdit: (code) => ipcRenderer.send('openEdit', code),
+    newEssay : (code) => ipcRenderer.send('newEssay', code)
+
 })
